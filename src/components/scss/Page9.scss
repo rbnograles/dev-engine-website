@@ -1,0 +1,136 @@
+@import 'colors';
+
+.content-centered-page-9 {
+    align-items: center;
+    background-color: #42378f;
+    background-image: $linear-gradient;
+    display: flex;
+    justify-content: center;
+    padding: 10% 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .row {
+        margin-top: 0 !important;
+        .left {
+            width: 100%;
+            margin-top: 30px;
+        }
+        .right {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .card {
+        background-color: white;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        .form-input {
+            position: relative;
+            margin-bottom:30px;
+            .input-holder {
+                display: flex;
+                flex-direction: column;
+            }
+            input {
+                padding: 10px 10px 10px 16px;
+                text-transform: capitalize;
+                border-radius: 50px;
+                background-color: rgba(194, 189, 189, 0.5);
+                color: black;
+                &.not-capetalize {
+                    text-transform: unset;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            textarea {
+                padding: 10px 10px 10px 16px;
+                border-radius: 10px;
+                height: 150px;
+                background-color: rgba(194, 189, 189, 0.5);
+                color: black;
+                &.not-capetalize {
+                    text-transform: unset;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            label {
+                position: absolute;
+                top: -20px;
+                left: 10px;
+                font-size: 14px;
+                color: $primary-color;
+            }
+        }
+        .stack-btn {
+            width: 95%;
+            margin-left: 3%;
+            -webkit-animation: unset;
+            -moz-animation: unset;
+            animation: unset;
+        }
+    }
+}
+.contactBody {
+    padding: 5%;
+}
+#textareField {
+    height: 190px;
+}
+#btn-submit {
+    background-color: #c72c41;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+#btn-submit:hover {
+    background-color: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+}
+.info-holder {
+    margin-top: 27px;
+    max-width: 100%;
+}
+.info-holder .card {
+    background-color:#f2f2f2 ;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.subForm {
+    height: 10%;
+    justify-content: start;
+    text-align: start;
+}
+.info p {
+    margin-bottom: 0 !important;
+    font-weight: 500;
+    font-size: 13px;
+    color: $primary-color;
+}
+.info p a {
+    margin-bottom: 0 !important;
+    font-weight: 500;
+    font-size: 13px;
+    color: $primary-color;
+    text-decoration: none;
+}
+.icon-color {
+    color: #c72c41;
+}
+#card-title {
+    font-weight: 700;
+    color: $primary-color;
+}
+
+@import 'page9_media.scss';

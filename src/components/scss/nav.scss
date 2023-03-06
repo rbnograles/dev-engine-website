@@ -1,0 +1,125 @@
+@import "colors";
+@import "defaults";
+
+.navigation {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  z-index: 999999999;
+  height: 70px;
+  &.scrolled-navigation {
+    background-color: #2e2a2a !important;
+    box-shadow: $main-shadow 0px 5px 6px;
+  }
+  .logo-image {
+    width: auto;
+    height: 30px;
+    margin: auto 0;
+  }
+  .logo-circle {
+    width: auto;
+    height: 50px;
+    margin: auto 5px 0;
+    display: none;
+  }
+}
+
+// icons
+.nav-icon-wrapper {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  .nav-icon {
+    width: auto;
+    height: 30px;
+    margin-top: 3px;
+    &.c-red {
+      color: $primary-color;
+    }
+    &.c-white {
+      color: white;
+    }
+  }
+}
+
+// mobile defaults
+.nav-orientation {
+  right: 0;
+  top: 0;
+  height: 100%;
+  &.open {
+    width: 100%;
+    background: rgba(22, 22, 22, 0.5);
+    transition: all 0.25s ease;
+  }
+  &.close {
+    width: 0;
+    background-color: transparent;
+    transition: all 0.25s ease;
+  }
+  .nav-list-display {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0px 5px 20px;
+    border-radius: 15px 0 0 0;
+    background-color: white;
+    a {
+      margin: 5px 0;
+      padding: 10px 15px;
+      border-radius: 50px 0 0 50px;
+      transition: all 0.25s ease;
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      &.active {
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+  }
+  .side-toggle-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    b {
+      color: $primary-color;
+    }
+    &.open {
+      width: 60%;
+    }
+    &.close {
+      display: none !important;
+      position: unset !important;
+      right: 0;
+      width: 0%;
+    }
+  }
+}
+
+// hegight and width
+.w-open {
+  right: 0;
+  width: 60%;
+  transition: all 0.25s ease;
+}
+.w-close {
+  display: none !important;
+  width: 0;
+  transition: all 0.25s ease;
+}
+
+@import "nav_media";

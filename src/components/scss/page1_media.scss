@@ -1,0 +1,164 @@
+@media screen and (min-width: 992px) {
+    .page-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 5%;
+        // content
+        .page-content {
+            width: 100%;
+            color: white;
+            position: unset;
+            margin-top: 14%;
+            margin-left: 10%;
+            z-index: 99;
+            text-align: center;
+            // part separation
+            .upper-content {
+                padding: 0 10px;
+                .content-header {
+                    font-size: 40px;
+                    line-height: .95px;
+                }
+                h1 {
+                    font-size: 38px !important;
+                }
+                .support-content {
+                    margin-top: 10px;
+                    font-size: 21px;
+                }
+                .emphasize {
+                    font-size: 40px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    color: gold;
+                }
+            }
+            .lower-content {
+                display: unset;
+                margin-top: 20px;
+                h1 {
+                    font-size: 60px;
+                }
+                span.support-text {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .stack-btn {
+                display: none;
+            }
+        }
+        .page-content-form {
+            position: relative;
+            margin-top: 9%;
+            margin-right: 10%;
+            background-color: rgba(228, 226, 226, 0.3);
+            border-radius: 10px;
+            width: 700px;
+            height: 500px;
+            color: white;
+            z-index: 99;
+            display: unset;
+            padding: 20px 20px;
+            h2 {
+                margin-bottom: 30px;
+                margin-left: 10px;
+            }
+            .form-input {
+                position: relative;
+                margin-bottom:30px;
+                &.last {
+                    margin-bottom: 10px;
+                }
+                .input-holder {
+                    display: flex;
+                    flex-direction: column;
+                }
+                input {
+                    padding: 10px 10px 10px 16px;
+                    text-transform: capitalize;
+                    border-radius: 50px;
+                    background-color: rgba(245, 244, 244, 0.5);
+                    color: black;
+                    &.not-capetalize {
+                        text-transform: unset;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                label {
+                    position: absolute;
+                    top: -20px;
+                    left: 10px;
+                    font-size: 14px;
+                }
+            }
+            .form-checkbox {
+                display: flex;
+                margin-left: 10px;
+                line-height: 1.1;
+                input {
+                    margin-top: 6px;
+                    margin-right: 10px;
+                    transform: scale(1.5);
+                    cursor: pointer;
+                }
+                p {
+                    font-size: 12px;
+                    margin-bottom: 2px;
+                    font-weight: 700;
+                }
+                span {
+                    font-size: 12px;
+                }
+                b {
+                    text-transform: uppercase;
+                }
+            }
+            .stack-btn {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                width: 90%;
+                background-color: $primary-color;
+                color: white;
+                -webkit-animation: unset;
+                -moz-animation: unset;
+                animation: unset;
+                .button-content {
+                    margin: 0 20px;
+                    span {
+                        font-weight: 900;
+                        font-size: 15px;
+                        margin: auto 0;
+                    }
+                }
+                &:hover {
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .page-content {
+        margin-top: 15% !important;
+    }
+    .page-content-form {
+        margin-top: 11% !important;
+    }
+}
+@media only screen and (max-width: 1360px) {
+    .page-container {
+        .page-content {
+            .lower-content {
+                h2 {
+                    padding: 0 5px !important;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+@import 'colors';
+
+// container
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+}
+
+// shadow
+.stack-shadow {
+    box-shadow : $main-shadow 0px 3px 6px;
+}
+
+// overlay
+.page-overlay {
+    position: absolute;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(56, 54, 54);
+    opacity: .75;
+    z-index: 1;
+}
+
+// displays
+.d-none {
+    display: none !important;
+}
+.d-flex {
+    display: flex;
+    &.flex-column {
+        flex-direction: column;
+    }
+}
+
+// etc
+.line {
+    margin: 10px 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid white;
+}
+.list-style-colon {
+    &:last-child span {
+        display: none;
+    }
+}
+input::-webkit-input-placeholder {
+    color: $primary-color;
+}
+::-moz-placeholder {
+    color: $primary-color;
+}
+:-ms-input-placeholder {
+    /** notice that ie has only a single colon) */
+    color: $primary-color;
+}
+::-webkit-input-placeholder {
+    color: $primary-color;
+}
+::placeholder {
+    color: $primary-color;
+    text-transform: none;
+}

@@ -1,0 +1,109 @@
+@import 'colors';
+
+.content-centered-page-7 {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .design-content {
+        display: none;
+    }
+    .page-title {
+        position: absolute;
+        top: 50px;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding: 0 20px;
+        transition: all .25s ease;
+    }
+    .testimonial-content {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .row {
+        position: relative;
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        &:nth-child(3) {
+            margin-top: 0px !important;
+        }
+        .testimonila-image {
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            z-index: 999;
+        }
+        .col-item {
+            width: 100%;
+            margin-top: 20px;
+            position: relative;
+            .name {
+                position: absolute;
+                left: 23%;
+                font-size: 12px;
+            }
+        }
+        .card-blog {
+            position: relative;
+            bottom: 0;
+            background-color: #0099ff;
+            border: 1px solid #0099ff;
+            box-shadow: 0px 5px 15px rgba($color: #2a67ca, $alpha: 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            margin-top: 20px;
+            margin-left: 80px;
+            margin-right: 10px;
+            padding: 10px;
+            text-align: left !important;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-bottom: 15px solid #0099ff;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                bottom: 0;
+                left: -15px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-bottom: 17px solid #0099ff;
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                bottom: -1px;
+                left: -17px;
+            }
+            .message-content {
+                padding: 0;
+                margin: 0;
+                color: white;
+            }
+            .message-timestamp-left {
+                font-size: 12px;
+                color: white;
+                font-weight: 900;
+            }            
+        }
+    }  
+}
+
+@import 'page7_media.scss';

@@ -1,0 +1,85 @@
+@import 'colors';
+
+.content-centered-page-8 {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .design-content {
+        display: none;
+    }
+    .page-title {
+        position: absolute;
+        top: 50px;
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+        padding: 0 20px;
+        transition: all .25s ease;
+    }
+    .testimonial-content {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .row {
+        position: relative;
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+        &:nth-child(3) {
+            margin-top: 0px !important;
+        }
+        .testimonila-image {
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            z-index: 999;
+        }
+        .col-item {
+            width: 100%;
+            margin-top: 20px;
+            position: relative;
+            .name {
+                position: absolute;
+                left: 23%;
+                font-size: 12px;
+            }
+        }
+        .card-blog {
+            position: relative;
+            bottom: 0;
+            box-shadow: 0px 5px 15px rgba($color: #2a67ca, $alpha: 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            margin-top: 5px;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 20px;
+            text-align: left !important;
+            .header {
+                color: $primary-color;
+                font-size: 20px;
+                font-weight: 700;
+                border-bottom: 2px solid $primary-color;
+                margin-bottom: 10px;
+            }
+            .content {
+                text-indent: 20px;
+            }         
+        }
+    }  
+}
+
+@import './page8_media.scss';

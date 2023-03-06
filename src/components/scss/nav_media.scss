@@ -1,0 +1,80 @@
+// tablet
+@media screen and (min-width: 600px) {
+    .navigation {
+        height: auto;
+        .logo-circle {
+            display: unset;
+        }
+    }
+    .nav-icon-wrapper {
+        .nav-icon {
+            margin-top: 10px;
+            
+        }
+    }
+}
+// pc laptop bigger screens
+@media screen and (min-width: 996px) {
+    .navigation {
+        &.scrolled-navation {
+            background-color: white;
+            box-shadow: $main-shadow 0px 5px 6px;
+            a {
+                color: $primary-color !important;
+                &:hover {
+                    color: white !important;
+                }
+                &.active {
+                    color: white !important;
+                }
+            }
+        }
+    }
+    .nav-icon-wrapper {
+        display: none;
+    }
+    .w-open {
+        width: unset;
+    }
+    .pos-fixed {
+        position: unset !important;
+    }
+    .nav-orientation {
+        position: relative !important;
+        height: unset;
+        width: inherit !important;
+        .nav-list-display {
+            position: absolute;
+            top: 12px;
+            right: 0;
+            padding: unset;
+            width: auto !important;
+            background-color: transparent !important;
+            &.w-close {
+                display: unset !important;
+            }
+            a {
+                position: relative;
+                margin: 5px 5px;
+                padding: 10px 15px;
+                border-radius: 50px;
+                transition: all .25s ease;
+                color: white;
+                &:hover {
+                    background-color: $primary-color;
+                    color: white;
+                    cursor: pointer;
+                    transition: all .25s ease;
+                }
+                &.active {
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+        .side-toggle-footer {
+            display: none;
+        }
+    }
+
+}

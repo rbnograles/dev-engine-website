@@ -1,0 +1,19 @@
+@import 'colors';
+
+.footer {
+    background-color: #2e2a2a;   
+    padding: 1.5% 0;
+    text-align: center;
+    p {
+        color: white;
+    }
+    b {
+        color: $primary-color;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        padding: 5% 0;
+    }
+}

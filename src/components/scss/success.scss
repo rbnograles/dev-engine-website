@@ -1,0 +1,66 @@
+@import 'colors';
+
+.stack-toast {
+    position: fixed;
+    z-index: 99999999999999999;
+    background-color: #cde6cb;
+    width: 95%;
+    height: auto;
+    margin: 2% 3%;
+    padding: 10px;
+    top: 0;
+    display: flex;
+    border-radius: 10px;
+    border-left: 5px solid $success;
+    box-shadow: $main-shadow 0px 3px 6px;
+    transform: translate(0px, -200%);
+    transition: all .25s ease;
+    &.show {
+        transform: translate(0px, 0px);
+        transition: all .25s ease;
+    }
+    svg {
+        height: 50px;
+        width: 50px;
+        margin: auto 0;
+        color: $success;
+        &.times {
+            position: absolute;
+            top: 10px;
+            color: $muted;
+            height: 20px;
+            width: 20px;
+            margin: 0 5px;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .toast-body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        span {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (min-width : 992px) {
+    .stack-toast {
+        bottom: 0;
+        top: unset;
+        width: 400px;
+        transform: translate(-200%, 0%);
+        transition: all .25s ease;
+        opacity: 0;
+        &.show {
+            opacity: 1;
+            transform: translate(0px, 0px);
+            transition: all .25s ease;
+        }
+    }
+}

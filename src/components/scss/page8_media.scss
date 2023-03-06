@@ -1,0 +1,68 @@
+@import 'colors';
+
+
+@media screen and (max-width: 375px) {
+    .content-centered-page-8 {
+        .page-title {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width : 600px ) {
+    .content-centered-page-8 {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        .row {
+            flex-direction: column !important;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .content-centered-page-8 {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        .row {
+            align-items: center;
+            display: unset;
+            margin-left: auto;
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .card-blog {
+            width: 100% !important;
+            height: auto !important;
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .content-centered-page-8 {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        .row {
+            align-items: center;
+            display: unset;
+            margin-left: 60px;
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .card-blog {
+            float: left;
+            width: 45% !important;
+            height: 210px !important;
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+        }
+    }
+}

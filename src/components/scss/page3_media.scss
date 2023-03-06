@@ -1,0 +1,77 @@
+@import 'colors';
+
+@media screen and (min-width: 992px) {
+    .page-cover-secondary {
+        overflow: hidden;
+        background-image: url('../assets/home3.png');
+        .page-content-secondary { 
+            padding: 20px 0;
+            padding-left: 1%;
+            position: unset !important;
+            width: 50%;
+            text-align: unset;
+            .page-introduction {
+                font-size: 3.5em;
+                font-weight: 900;
+                color: white;
+                width: 100%;
+            }
+            .line {
+                display: none;
+            }
+            .page-subIntro {
+                font-size: 2rem;
+                color: white;
+            }
+        }
+        .rightContent {
+           margin: 100px 0 !important;
+           width: 50%;
+            .bg-laptop-content {
+                width: 650px;
+                height: 700px;
+                background: url(../assets/merged.png) no-repeat;
+                background-size: contain;
+            }
+        }
+        .btn-group {
+            margin-top: 20px !important;
+            margin-left: 10px;
+            padding: 0 !important;
+            .stack-btn {
+                color: $primary-color;
+                font-weight: 600;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .page-content-secondary { 
+        padding: 60px 0 !important;
+        padding-left: 1%;
+        position: unset !important;
+        width: 55%;
+        text-align: unset;
+        .page-introduction {
+            font-size: 5em !important;
+            font-weight: 900;
+            color: white;
+            width: 100%;
+        }
+        .page-subIntro {
+            font-size: 3rem !important;
+            color: white;
+        }
+    }
+    .rightContent {
+        width: 45% !important;
+         .bg-laptop-content {
+             width: 900px !important;
+             height: 600px !important;
+             background: url(../assets/merged.png) no-repeat;
+             background-size: contain;
+         }
+     }
+}
