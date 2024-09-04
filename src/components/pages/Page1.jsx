@@ -22,14 +22,14 @@ const Page1 = ({
       <div className="page-container page-cover-main" id="Home">
         <div className="page-content">
           <div className="upper-content">
-            <span className="content-header">Stack Webinar</span>
+            <span className="content-header">DevEngine Webinar</span>
             <div className="line"></div>
             <h1 className="font-title-resize">I.T. Strategy during COVID-19</h1>
             <p className="support-content">
               Introducing our first-ever webinar, with special guests
             </p>
             <p className="emphasize">
-              Xavier <span>School</span>
+              Sample <span>School</span>
             </p>
             <p className="support-content">
               on September 1, Tuesday at 4-4:45pm
@@ -44,7 +44,7 @@ const Page1 = ({
             </h2>
           </div>
           <button
-            className="mt-60 stack-btn btn-rounded"
+            className="mt-60 devengine-btn btn-rounded"
             onClick={handleShowMobileRegistration}
           >
             <div className="button-content">

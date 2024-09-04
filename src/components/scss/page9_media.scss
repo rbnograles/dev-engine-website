@@ -1,26 +1,26 @@
-@import 'colors';
+@import "colors";
 
 @media screen and (min-width: 992px) {
-    .content-centered-page-9 {
-        padding: 10% 10% !important;
-        .form-title {
-            font-size: 22px;
-        }
-        .row {
-            display: flex;
-            flex-direction: row !important;
-            .left {
-                width: 70% !important;
-            }
-            .right {
-                margin-left: 20px;
-                width: 30% !important;
-            }
-            .stack-btn {
-                width: 25%;
-                margin-top: 0 !important;
-                margin-left: 0 !important;
-            }
-        }
+  .content-centered-page-9 {
+    padding: 10% 10% !important;
+    .form-title {
+      font-size: 22px;
     }
+    .row {
+      display: flex;
+      flex-direction: row !important;
+      .left {
+        width: 70% !important;
+      }
+      .right {
+        margin-left: 20px;
+        width: 30% !important;
+      }
+      .devengine-btn {
+        width: 25%;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
 }

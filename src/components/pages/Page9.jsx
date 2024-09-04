@@ -107,7 +107,7 @@ const Page9 = (props) => {
                   </div>
                 </div>
                 <button
-                  className="stack-btn"
+                  className="devengine-btn"
                   id="btn-submit"
                   onClick={(e) => {
                     onSubmitContactUs();
@@ -141,7 +141,7 @@ const Page9 = (props) => {
                       <div className="info">
                         <p>
                           <i className="fa fa-envelope-open-text icon-color"></i>{" "}
-                          team@stackschool.dev
+                          team@devengineschool.dev
                         </p>
                         <p></p>
                       </div>
@@ -152,7 +152,7 @@ const Page9 = (props) => {
                       <div className="info">
                         <p>
                           <i className="fa fa-globe icon-color"></i>{" "}
-                          <span>www.stackschool.dev</span>
+                          <span>www.devengineschool.dev</span>
                         </p>
                       </div>
                     </div>

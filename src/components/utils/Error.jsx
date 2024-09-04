@@ -6,7 +6,9 @@ export class Error extends Component {
     const { error, closeToast } = this.props;
     return (
       <Fragment>
-        <div className={`stack-toast-error ${error === false ? "show" : ""}`}>
+        <div
+          className={`devengine-toast-error ${error === false ? "show" : ""}`}
+        >
           <FaRegTimesCircle />
           <div className="toast-body">
             <p>Oops!</p>

@@ -1,69 +1,75 @@
-@import 'colors';
+@import "colors";
 
-.stack-btn {
-    width: 200px;
-    padding: 12px 0;
-    background-color: white;
-    outline: none;
-    .button-content {
-        margin: 0 20px;
-        span {
-            font-weight: 900;
-            font-size: 15px;
-            margin: auto 0;
-        }
+.devengine-btn {
+  width: 200px;
+  padding: 12px 0;
+  background-color: white;
+  outline: none;
+  .button-content {
+    margin: 0 20px;
+    span {
+      font-weight: 900;
+      font-size: 15px;
+      margin: auto 0;
     }
-    &:hover {
-        cursor: pointer;
-        -webkit-animation: none;
-        -moz-animation: none;
-        animation: none;
-        transition: all .25s ease;
-    }
-    // corners
-    &.btn-rounded {
-        border-radius: 50px;
-    }
+  }
+  &:hover {
+    cursor: pointer;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    transition: all 0.25s ease;
+  }
+  // corners
+  &.btn-rounded {
+    border-radius: 50px;
+  }
 }
 
-.stack-btn-card {
-    position: absolute;
-    z-index: 999;
-    left: 17px;
-    bottom: 20px;
-    width: 100px;
-    padding: 5px 0;
-    background-color: $primary-color;
-    color: white;
-    outline: none;
+.devengine-btn-card {
+  position: absolute;
+  z-index: 999;
+  left: 17px;
+  bottom: 20px;
+  width: 100px;
+  padding: 5px 0;
+  background-color: $primary-color;
+  color: white;
+  outline: none;
+  border-radius: 50px;
+  .button-content {
+    margin: 0 20px;
+    span {
+      font-weight: 900;
+      font-size: 15px;
+      margin: auto 0;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    transition: all 0.25s ease;
+  }
+  // corners
+  &.btn-rounded {
     border-radius: 50px;
-    .button-content {
-        margin: 0 20px;
-        span {
-            font-weight: 900;
-            font-size: 15px;
-            margin: auto 0;
-        }
-    }
-    &:hover {
-        cursor: pointer;
-        -webkit-animation: none;
-        -moz-animation: none;
-        animation: none;
-        transition: all .25s ease;
-    }
-    // corners
-    &.btn-rounded {
-        border-radius: 50px;
-    }
+  }
 }
 
 @-webkit-keyframes bounce {
-    to { -webkit-transform: scale(1.2); }
+  to {
+    -webkit-transform: scale(1.2);
+  }
 }
 @-moz-keyframes bounce {
-    to { -moz-transform: scale(1.2); }
+  to {
+    -moz-transform: scale(1.2);
+  }
 }
 @keyframes bounce {
-    to { transform: scale(1.2); }
+  to {
+    transform: scale(1.2);
+  }
 }

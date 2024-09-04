@@ -1,52 +1,51 @@
-@import 'colors';
+@import "colors";
 
 .page-cover-secondary {
-    background-image: url('../assets/home2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    .page-content-secondary {
-        width: 100%;
-        color: white;
-        position: absolute;
-        margin-top: 120px;
-        z-index: 99;
-        justify-content: center;
-        text-align: center;
-        .page-introduction {
-            font-size: 35px;
-            font-weight: 900;
-            color: white;
-            width: 100%;
-        }
-        .line {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        .page-subIntro {
-            font-size: 1.6rem;
-            color: white;
-        }
+  background-image: url("../assets/home2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .page-content-secondary {
+    width: 100%;
+    color: white;
+    position: absolute;
+    margin-top: 120px;
+    z-index: 99;
+    justify-content: center;
+    text-align: center;
+    .page-introduction {
+      font-size: 35px;
+      font-weight: 900;
+      color: white;
+      width: 100%;
     }
-    .rightContent {
-        display: block;
-        justify-content: center;
-        margin: 250px auto;
-        .bg-laptop-content {
-            width: 390px;
-            height: 250px;
-            background: url(../assets/merged.png) no-repeat;
-            background-size: contain;
-        }
+    .line {
+      margin-left: 10%;
+      margin-right: 10%;
     }
-    .btn-group {
-        margin-top: 300px;
-        .stack-btn {
-            color: $primary-color;
-            font-weight: 600;
-            font-size: 15px;
-        }
+    .page-subIntro {
+      font-size: 1.6rem;
+      color: white;
     }
+  }
+  .rightContent {
+    display: block;
+    justify-content: center;
+    margin: 250px auto;
+    .bg-laptop-content {
+      width: 390px;
+      height: 250px;
+      background: url(../assets/merged.png) no-repeat;
+      background-size: contain;
+    }
+  }
+  .btn-group {
+    margin-top: 300px;
+    .devengine-btn {
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
 }
 
-
-@import './page3_media.scss';
+@import "./page3_media.scss";

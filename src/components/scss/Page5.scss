@@ -1,129 +1,128 @@
-@import 'colors';
+@import "colors";
 
 .content-centered-page-5 {
-    align-items: center;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .page-title {
+    position: absolute;
+    top: 50px;
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+    padding: 0 20px;
+    transition: all 0.25s ease;
+  }
+  .row {
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
-    .page-title {
-        position: absolute;
-        top: 50px;
-        color: $primary-color;
-        border-bottom: 2px solid $primary-color;
-        padding: 0 20px;
-        transition: all .25s ease;
+    &:nth-child(3) {
+      margin-top: 0px !important;
     }
-    .row {
-        margin-top: 90px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        &:nth-child(3) {
-            margin-top: 0px !important;
+    .col-item {
+      margin-top: -20px;
+    }
+    .card-blog {
+      position: relative;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0px 5px 15px rgba($color: #2a67ca, $alpha: 0.1);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      width: 300px !important;
+      height: 260px !important;
+      margin: 20px 15px;
+      text-align: left !important;
+      &.bg1 {
+        background-image: url("../assets/merged.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &.bg2 {
+        background-image: url("../assets/bg23.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.bg3 {
+        background-image: url("../assets/login.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &.bg4 {
+        background-image: url("../assets/card-art2jpg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.bg5 {
+        background-image: url("../assets/bg22.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &.bg6 {
+        background-image: url("../assets/bg3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .time-content {
+        color: black;
+        background-color: white;
+        z-index: 999;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 2px 10px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 900;
+      }
+      .content-body {
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        margin: 10px;
+        padding: 10px;
+        text-align: left !important;
+        h2 {
+          margin-top: 30px;
+          z-index: 999;
+          color: white;
+          text-align: left;
+          text-transform: uppercase;
         }
-        .col-item {
-            margin-top: -20px;
+        .content-paragraph {
+          color: white;
+          z-index: 999;
+          font-size: 12px;
         }
-        .card-blog {
-            position: relative;
-            align-items: center;
-            background-color: white;
-            box-shadow: 0px 5px 15px rgba($color: #2a67ca, $alpha: 0.1);
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            width: 300px !important;
-            height: 260px !important;
-            margin: 20px 15px;
-            text-align: left !important;
-            &.bg1 {
-                background-image: url('../assets/merged.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-            &.bg2 {
-                background-image: url('../assets/bg23.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            &.bg3 {
-                background-image: url('../assets/login.jpg');
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-            &.bg4 {
-                background-image: url('../assets/card-art2jpg.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            &.bg5 {
-                background-image: url('../assets/bg22.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            &.bg6 {
-                background-image: url('../assets/bg3.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            .time-content {
-                color: black;
-                background-color: white;
-                z-index: 999;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                padding: 2px 10px;
-                border-radius: 50px;
-                font-size: 12px;
-                font-weight: 900;
-            }
-            .content-body {
-                width: 100%;
-                position: relative;
-                z-index: 999;
-                margin: 10px;
-                padding: 10px;
-                text-align: left !important;
-                h2 {
-                    margin-top: 30px;
-                    z-index: 999;
-                    color: white;
-                    text-align: left;
-                    text-transform: uppercase;
-                }
-                .content-paragraph {
-                    color: white;
-                    z-index: 999;
-                    font-size: 12px;
-                }
-                .content-paragraph-sub {
-                    color: white;
-                    z-index: 999;
-                    font-size: 12px;
-                }
-            }
-            .overlay {
-                position: absolute;
-                bottom: 0;
-                border-radius: 10px;
-                background-color: rgba($color: #0a0a0a, $alpha: .5);
-                width: 100%;
-                height: 100%;
-            }
-            .stack-btn-card {
-                padding: 5px !important;
-            }
+        .content-paragraph-sub {
+          color: white;
+          z-index: 999;
+          font-size: 12px;
         }
-    }    
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        border-radius: 10px;
+        background-color: rgba($color: #0a0a0a, $alpha: 0.5);
+        width: 100%;
+        height: 100%;
+      }
+      .devengine-btn-card {
+        padding: 5px !important;
+      }
+    }
+  }
 }
 
-
-@import 'page5_media';
+@import "page5_media";

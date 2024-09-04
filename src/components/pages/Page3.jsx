@@ -9,7 +9,7 @@ const Page3 = () => {
         <div className="line"></div>
         <span className="page-subIntro">Our Response to COVID-19</span>
         <div className="btn-group">
-          <button className="stack-btn btn-rounded">
+          <button className="devengine-btn btn-rounded">
             <Link to="Suite" spy={true} smooth={true} offset={0} duration={500}>
               Learn More
             </Link>

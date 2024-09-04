@@ -6,7 +6,7 @@ export class Success extends Component {
     const { success, closeToast, successmsg } = this.props;
     return (
       <Fragment>
-        <div className={`stack-toast ${success ? "show" : ""}`}>
+        <div className={`devengine-toast ${success ? "show" : ""}`}>
           <FaRegCheckCircle />
           <div className="toast-body">
             <p>{successmsg[0]}</p>

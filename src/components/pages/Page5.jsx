@@ -12,7 +12,7 @@ const Page5 = ({ isMinimized }) => {
   {
     return (
       <div className="content-centered-page-5" id="Advantage">
-        <h2 className="page-title">The Stack Advantage</h2>
+        <h2 className="page-title">The devengine Advantage</h2>
         <Row>
           <div className="col-item">
             <Card
@@ -40,7 +40,7 @@ const Page5 = ({ isMinimized }) => {
               cardTitle="Single Sign-On"
               classNames="card-blog bg3"
               cardContent="One username, one password."
-              cardContentSub="All of Stack."
+              cardContentSub="All of devengine."
             />
             {isMinimized ? (
               <Card

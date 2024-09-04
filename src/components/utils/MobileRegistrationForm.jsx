@@ -91,15 +91,15 @@ const MobileRegistrationForm = ({
             <div className="content-holder">
               <p>Data Policy Agreement</p>
               <span>
-                In submitting this form, I agree to authorise <b>Stack</b> to
-                store and process my information in accordance to the Data
+                In submitting this form, I agree to authorise <b>devengine</b>{" "}
+                to store and process my information in accordance to the Data
                 Privacy Act of 2012.
               </span>
             </div>
           </div>
           <button
             type="button"
-            className="mt-60 stack-btn btn-success btn-rounded"
+            className="mt-60 devengine-btn btn-success btn-rounded"
             onClick={(e) => {
               onSubmit();
             }}

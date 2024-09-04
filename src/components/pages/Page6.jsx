@@ -32,7 +32,8 @@ const Page6 = () => {
             status=""
             cardTitle={
               <div className="card-title">
-                <FaCubes className="card-icon stack" /> <span>Standard</span>
+                <FaCubes className="card-icon devengine" />{" "}
+                <span>Standard</span>
               </div>
             }
             classNames="card-blog"

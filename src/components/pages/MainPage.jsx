@@ -36,37 +36,37 @@ const MainPage = (props) => {
     isToggleOpen: false,
     FAQItems: [
       {
-        question: "What is Stack?",
+        question: "What is devengine?",
         content:
-          "Stack is a suite of school-specific apps, designed to support teachers in daily task management. Our goal is to recenter the passion for teaching by letting teachers do what they do best: TEACH.",
+          "devengine is a suite of school-specific apps, designed to support teachers in daily task management. Our goal is to recenter the passion for teaching by letting teachers do what they do best: TEACH.",
         aosclasses: "fade-right",
         aosDelay: "300",
       },
       {
-        question: "Who is in Team Stack?",
+        question: "Who is in Team devengine?",
         content:
           "We are university students and recent graduates, who have previously experienced annoying and clunky systems. We recently turned 1 in 2020, won 4 university-level competitions, and are mentored by industry leaders, both in the Philippines and abroad.",
         aosclasses: "fade-left",
         aosDelay: "600",
       },
       {
-        question: "How is Stack different from my current solution?",
+        question: "How is devengine different from my current solution?",
         content:
           "Product, service and price. We pride ourselves in delivering school-specific solutions through better technology and shorter response times, while giving clients value for their money.",
         aosclasses: "fade-right",
         aosDelay: "900",
       },
       {
-        question: "How do we use Stack?",
+        question: "How do we use devengine?",
         content:
-          "Easy! Either using our website (www.stackschool.dev/login) or from your local server, whichever your school prefers.",
+          "Easy! Either using our website (www.devengineschool.dev/login) or from your local server, whichever your school prefers.",
         aosclasses: "fade-left",
         aosDelay: "1200",
       },
       {
         question: "How does your 24/7 customer service work?",
         content:
-          "We have teams that work round-the-clock customer service to reduce delays to your service. All queries are answered by our amazing Stack Technology team, you know, the same people who built your system.",
+          "We have teams that work round-the-clock customer service to reduce delays to your service. All queries are answered by our amazing devengine Technology team, you know, the same people who built your system.",
         aosclasses: "fade-right",
         aosDelay: "1500",
       },
