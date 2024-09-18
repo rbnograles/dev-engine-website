@@ -128,7 +128,7 @@ const MainPage = (props) => {
           onSubmit={onSubmit}
           clicked={clicked}
         />
-        <Page3 />
+        {/* <Page3 /> */}
         <Page4 />
         <Page5 isMinimized={isMinimized} />
         <Page6 />

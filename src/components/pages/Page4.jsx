@@ -13,7 +13,7 @@ const Page4 = () => {
     return (
       <Fragment>
         <div className="content-centered-page-4" id="Suite">
-          <h2 className="page-title">The devengine Suite</h2>
+          <h2 className="page-title">The DevEngine Suite</h2>
           <Row>
             <div className="col-item">
               <Card
